@@ -1,0 +1,78 @@
+// mise en page
+
+#blocpage {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    background-image: url(.././img/wall.png);
+    background-size: contain;
+}
+
+// Titre
+
+.title {
+    background-image: linear-gradient(to bottom , #579CB4, transparent 95%);
+    transform: rotate(-14deg );
+    position: relative;
+    left: -45em;
+    top: .85em;
+    font-size: 1em;
+    font-family: helvetica,arial,sans-serif;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+blockquote {
+    margin: 0;
+}
+
+blockquote {
+    padding: 15px;
+    background: #eee;
+    border-radius: 5px;
+    border-style: double;
+}
+
+blockquote p::before {
+    content: '\201C';
+}
+
+blockquote p::after {
+    content: '\201D';
+}
+
+
+h1 {
+    color: $colour-secondary;
+    margin: 0px;
+    padding: 20px;
+    font-size: 60px;
+    margin-bottom: 50px;
+}
+// corps
+
+.corps {
+    display: flex;
+    flex-flow: wrap;
+    width: 1200px;
+    justify-content: center;
+}
+body {
+    margin: 0px;
+}
+
+// bas de page
+
+footer {
+    display: flex;
+    flex-direction: row;
+    bottom: 0px;
+    background-image: linear-gradient(to bottom left, transparent 40%,#579CB4 );
+    padding: 20px;
+    justify-content: space-between;
+    margin-top: 46px;
+}
+

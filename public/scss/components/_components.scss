@@ -1,0 +1,70 @@
+
+
+// icone Note
+.note {
+    font-size: 25px;
+    background: $colour-note;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.note_bottom {
+    background: $colour-note;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-right: 20px;
+}
+
+.un>a {
+    color: $colour-secondary;
+    font-size: 35px;
+}
+.deux>a {
+    color: $colour-secondary;
+    font-size: 35px;
+}
+.trois>a {
+    color: $colour-secondary;
+    font-size: 35px;
+    
+}
+
+.me {
+    position: relative;
+    &::before {
+        content: "i am Gaël";
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 3px;
+        bottom: -5px;
+        left: 0;
+        background-color: currentColor;
+        transform-origin: bottom right;
+        transition: transform 400ms ease-out;
+    }
+    &:hover::before {
+        cursor: pointer;
+        transform: scaleX(1);
+        transform-origin: bottom left;
+        
+    }
+}
+
+// Mail
+
+a:link {
+    text-decoration: none;
+}
+
+// images
+
+img {
+    width: 28%;
+    margin: auto;
+}
+
+
+ #monog {
+         width: 12%;
+         margin-left: 50px;
+ }

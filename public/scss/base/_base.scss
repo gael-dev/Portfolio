@@ -1,0 +1,17 @@
+
+
+
+
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+article>p {
+    color: aliceblue;
+        font-weight: bold;
+        font-size: 60px;
+        margin-bottom: 80px;
+}

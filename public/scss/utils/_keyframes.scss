@@ -1,0 +1,56 @@
+// bas de page
+
+@-webkit-keyframes wiggle {
+
+    0% {
+        transform: translateY(0px);
+    }
+   
+  
+    60% {
+        transform: translateY(10px);
+    }
+   
+    100% {
+        transform: translateY(0px);
+    }
+
+}
+.un:hover, .deux:hover  {
+    -webkit-animation-name: wiggle;
+    animation: wiggle 0.4s ease-in-out infinite alternate;
+    
+    
+}
+// Caroussel
+
+@keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+  }
+
+
+@keyframes linked {
+        0% {
+            transform: translate(0px);
+        }
+
+        50% {
+            transform: translate(-50px, -7vh) scale(2);
+        }
+
+        100%  {
+            transform: translate(0px);
+        }
+  }
+  .trois:hover {
+    animation: linked 2s ease-in-out;
+    transition: transform 2s ease-in-out;
+        }

@@ -1,0 +1,120 @@
+
+// projet 1 index
+
+.projet1 {
+    @include projet-box;
+    box-shadow: $box-shadow;
+    background-image: linear-gradient(to left, transparent 15%,#579CB4 );
+    font-family: 'Ma Shan Zheng', cursive;
+}
+.projet1>p,
+.projet1 i {
+    @include transition;
+    color: $title-projet1; 
+}
+.projet1:hover>p,
+.projet1:hover i {
+    @include transition-hover;
+    width: 100%;
+    padding: 10px;
+}
+
+// projet 2 index
+
+.projet2 {
+    @include projet-box;
+    box-shadow: $box-shadow;
+    background-image: linear-gradient(to left, transparent 15%,#579CB4 );
+    font-family: 'Redressed', cursive;
+}
+.projet2>P,
+.projet2 i  {
+    @include transition;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+.plat2 {
+    background: $title-projet1;
+}
+.ora {
+    @include transition;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: rgb(199, 116, 18);
+}
+
+.projet2:hover>p,
+.projet2:hover i  {
+    @include transition-hover
+}
+
+// projet 3 index
+
+.projet3 {
+    @include projet-box;
+    box-shadow: $box-shadow;
+    background-image: linear-gradient(to left, transparent 15%,#579CB4 );
+    font-family: 'Dancing Script', cursive;
+    .plat3 {
+        padding-left: 3px;
+    }
+}
+.projet3>p,
+.projet3 i {
+    @include transition;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.projet3:hover>p,
+.projet3:hover i {
+    @include transition-hover;
+}
+
+.plat3 {
+    background: $title-projet1;
+}
+
+.blue {
+    @include transition;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: rgb(8, 135, 251);
+}
+
+// projet 4 index
+
+.projet4 {
+    @include projet-box;
+    box-shadow: $box-shadow;
+    font-family: 'Kaushan Script', cursive;
+    background-image: linear-gradient(to left, transparent 15%,#579CB4 );
+}
+.projet4>p,
+.projet4 i {
+    @include transition;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.projet4:hover>p,
+.projet4:hover i {
+    @include transition-hover;
+}
+
+.plat4 {
+    background: $title-projet1;
+}
+
+.green {
+    @include transition;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: rgb(114, 191, 86);
+}
+
+.trans  { 
+     
+}
+
+
