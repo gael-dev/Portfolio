@@ -40,13 +40,23 @@
         left: 0;
         background-color: currentColor;
         transform-origin: bottom right;
-        transition: transform 400ms ease-out;
+        transition: transform 500ms ease-out;
+        
     }
     &:hover::before {
         cursor: pointer;
         transform: scaleX(1);
         transform-origin: bottom left;
+        color: white;
         
+        
+            
+    
+        
+    }
+    &:hover {
+        color: rgb(44, 136, 167); 
+       cursor: pointer;
     }
 }
 

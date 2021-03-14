@@ -186,12 +186,17 @@ article > p {
   left: 0;
   background-color: currentColor;
   transform-origin: bottom right;
-  transition: transform 400ms ease-out;
+  transition: transform 500ms ease-out;
 }
 .me:hover::before {
   cursor: pointer;
   transform: scaleX(1);
   transform-origin: bottom left;
+  color: white;
+}
+.me:hover {
+  color: #2c88a7;
+  cursor: pointer;
 }
 
 a:link {
@@ -416,6 +421,7 @@ form {
   white-space: nowrap;
   font-family: sans-serif;
   overflow: hidden;
+  background-color: #444;
 }
 form img {
   width: 90%;
