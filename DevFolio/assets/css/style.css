@@ -24,6 +24,13 @@ a:hover {
   transition: all 0.5s ease-in-out;
 }
 
+.folio {
+  text-align-last: center;
+  margin-bottom: 60px;
+  color: rgb(57, 113, 204);
+  font-weight: bold;
+}
+
 .p-r {
   position: relative;
 }
