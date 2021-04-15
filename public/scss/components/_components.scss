@@ -25,7 +25,9 @@
 .trois>a {
     color: $colour-secondary;
     font-size: 35px;
-    
+}
+.arrow {
+    color: $colour-secondary;
 }
 
 .me {
@@ -69,7 +71,7 @@ a:link {
 // images
 
 img {
-    width: 28%;
+    width: 50%;
     margin: auto;
 }
 

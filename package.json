@@ -4,8 +4,11 @@
   "description": "Porfolio",
   "main": "index.js",
   "scripts": {
-    "sass" : "sass --watch ./public/scss/main.scss:./public/css/styles.css --style expanded"
+    "sass": "sass --watch ./public/scss/main.scss:./public/css/styles.css --style expanded"
   },
   "author": "Gaël Mijatovic",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "vue": "^2.6.12"
+  }
 }

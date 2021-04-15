@@ -49,7 +49,7 @@
     transform: translate(0px);
   }
   50% {
-    transform: translate(-50px, -7vh) scale(2);
+    transform: translate(50px);
   }
   100% {
     transform: translate(0px);
@@ -60,27 +60,43 @@
   transition: transform 2s ease-in-out;
 }
 
+@keyframes arrowdown {
+  0% {
+    transform: translate(0px);
+  }
+  50% {
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translate(0px);
+  }
+}
+.arrow {
+  animation: arrowdown 2s ease-in-out infinite;
+  transition: transform 2s ease-in-out;
+}
+
 #blocpage {
   display: flex;
   flex-direction: column;
   text-align: center;
   margin: auto;
   width: 100%;
-  background-image: url(.././img/wall.png);
+  background-color: #282C34;
   background-size: contain;
 }
 
 .title {
   background-image: linear-gradient(to bottom, #579CB4, transparent 95%);
-  transform: rotate(-14deg);
   position: relative;
-  left: -45em;
-  top: 0.85em;
-  font-size: 1em;
   font-family: helvetica, arial, sans-serif;
   font-weight: normal;
-  margin: 0;
+  margin-bottom: 5px;
   padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 35px;
 }
 
 blockquote {
@@ -125,7 +141,7 @@ footer {
   display: flex;
   flex-direction: row;
   bottom: 0px;
-  background-image: linear-gradient(to bottom left, transparent 40%, #579CB4);
+  background-image: linear-gradient(to bottom, transparent 5%, #579CB4);
   padding: 20px;
   justify-content: space-between;
   margin-top: 46px;
@@ -142,6 +158,38 @@ article > p {
   font-weight: bold;
   font-size: 60px;
   margin-bottom: 80px;
+}
+
+#formulaire {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  white-space: nowrap;
+  font-family: sans-serif;
+  overflow: hidden;
+  background-color: #444;
+}
+#formulaire label {
+  background: #444;
+  color: #fff;
+  transition: transform 400ms ease-out;
+  display: inline-block;
+  min-height: 100%;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  line-height: 100vh;
+}
+#formulaire img {
+  width: 90%;
+  margin-top: 65px;
+  border-style: double;
+}
+#formulaire input {
+  position: absolute;
 }
 
 .note {
@@ -171,6 +219,10 @@ article > p {
 .trois > a {
   color: #fdcb46;
   font-size: 35px;
+}
+
+.arrow {
+  color: #fdcb46;
 }
 
 .me {
@@ -204,7 +256,7 @@ a:link {
 }
 
 img {
-  width: 28%;
+  width: 50%;
   margin: auto;
 }
 
@@ -393,6 +445,14 @@ img {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-color: #72bf56;
+}
+
+.un {
+  align-self: center;
+}
+
+.deux {
+  align-self: center;
 }
 
 * {

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles2.css">
+    <title>Formulaire</title>
+</head>
+<body>
+    <h2>Formulaire de prise de contact</h2>
+<form action="#">
+  <p><i>Complétez le formulaire. Les champs marqué par </i><em>*</em> sont <em>obligatoires</em></p>
+  <fieldset>
+    <legend>Contact</legend>
+      <label for="nom">Nom <em>*</em></label>
+      <input id="nom" placeholder="" autofocus="" required=""><br>
+      <label for="telephone">Portable</label>
+      <input id="telephone" type="tel" placeholder="" pattern="06[0-9]{8}"><br>
+      <label for="email">Email <em>*</em></label>
+      <input id="email" type="email" placeholder="prenom.nom@gmail.com" required="" pattern="[a-zA-Z]*.[a-zA-Z]*@gmail.com"><br>
+  </fieldset>
+  <fieldset>
+    <legend>Information sur le projet</legend>
+      <label for="comments">Donnez des informations relatives a la prise de contact <em>*</em></label>
+      <textarea id="comments"></textarea>
+  </fieldset>
+ 
+  <fieldset>
+    <legend>Choisissez votre statut</legend>
+    <label for="pro"><input id="pro" type="checkbox" name="statut" value="pro"> Pro</label>
+    <label for="perso"><input id="perso" type="checkbox" name="statut" value="perso"> Perso</label>
+  </fieldset>
+  <p><input type="submit" value="Soummettre"></p>
+</form>
+
+    <img src="../img/valide.png">
+
+</body>
+</html>

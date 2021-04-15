@@ -43,7 +43,7 @@
         }
 
         50% {
-            transform: translate(-50px, -7vh) scale(2);
+            transform: translate(50px);
         }
 
         100%  {
@@ -54,3 +54,23 @@
     animation: linked 2s ease-in-out;
     transition: transform 2s ease-in-out;
         }
+
+
+@keyframes arrowdown {
+    0% {
+        transform: translate(0px);
+    }
+
+    50% {
+        transform: translateY(50px);
+    }
+
+    100%  {
+        transform: translate(0px);
+    } 
+}
+
+.arrow {
+    animation: arrowdown 2s ease-in-out infinite;
+    transition: transform 2s ease-in-out;
+}
