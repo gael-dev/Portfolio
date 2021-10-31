@@ -462,6 +462,10 @@ img {
   align-self: center;
 }
 
+.button {
+  background-color: burlywood;
+}
+
 /********************************
 * Basics
 *********************************/
