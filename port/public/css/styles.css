@@ -146,6 +146,8 @@ footer {
   padding: 20px;
   justify-content: space-between;
   margin-top: 46px;
+  position: absolute;
+  width: -webkit-fill-available;
 }
 
 a {
