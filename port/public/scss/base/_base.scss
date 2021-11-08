@@ -1,9 +1,15 @@
 
 section {
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    text-align: -webkit-center;
 }
+
+figure {
+    display: flex;
+    place-content: center;
+}
+
 
 article>p {
     color: aliceblue;

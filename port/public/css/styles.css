@@ -129,7 +129,7 @@ h1 {
 .corps {
   display: flex;
   flex-flow: wrap;
-  width: 1200px;
+  width: 73%;
   justify-content: center;
 }
 
@@ -146,7 +146,6 @@ footer {
   padding: 20px;
   justify-content: space-between;
   margin-top: 46px;
-  position: absolute;
   width: -webkit-fill-available;
 }
 
@@ -155,9 +154,14 @@ a {
 }
 
 section {
-  display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  text-align: -webkit-center;
+}
+
+figure {
+  display: flex;
+  place-content: center;
 }
 
 article > p {
@@ -466,6 +470,21 @@ img {
   background-color: burlywood;
 }
 
+.column {
+  text-align-last: center;
+  margin-top: 50px;
+  background-color: #50a7c4;
+  opacity: 0.8;
+  border: solid 2px;
+  padding: 36px;
+  width: 25%;
+}
+
+.plats {
+  background-image: url(../img/plats.jpg);
+  padding: 35px;
+}
+
 /********************************
 * Basics
 *********************************/
@@ -615,10 +634,11 @@ header {
 ::-webkit-scrollbar {
   height: 6px;
   background-color: #F5F5F5;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #050504;
+  background-color: #6b6969;
   border-radius: 3px;
 }
 
