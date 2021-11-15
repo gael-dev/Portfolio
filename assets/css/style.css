@@ -1300,3 +1300,12 @@ footer .credits {
 footer .credits a {
   color: #fff;
 }
+
+@media screen and (max-width: 768px) {
+  .portfolioimg {
+      display: none;
+  }
+  .contact {
+     display: none;
+  }
+}

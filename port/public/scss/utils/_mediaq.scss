@@ -1,69 +1,59 @@
 // Mise en page responsive pour tablettes et mobiles
 
 @media screen and (max-width: 1024px) {
+    .trois {
+        color: black;
+        text-align-last: center;
+    }
     blockquote {
         display: none;
     }
-    figure {
-        display: none;
-    }
-
-    .corps {
-        width: 100%;
-        display: flex;
+    .carousel-items {
         flex-direction: column;
     }
-    
-    img {
-        width: 100%;
+    .card {
+        margin: 10px;
     }
-    #monog {
-        width: 30%;
-        margin: 0;
+    .plats {
+        width: 70%;
+        margin: auto;
+    }
+    .column {
+        display: none;
+    }
+    footer {
+        flex-direction: column;
     }
 }
 
-@media screen and (max-width: 425px) {
-    blockquote {
-        display: none;
-    }
-    figure {
-        display: none;
-    }
-    .corps {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .title {
-        display: block;
-        
-    }
+@media screen and (max-width: 320px) {
     .arrow {
         display: none;
     }
-    h1 {
-        font-size: 48px;
+    .trois {
+        color: black;
+        text-align-last: center;
     }
-
-    .projet1, .projet2, .projet3, .projet4 {
-        width: 190px;
-        height: 150px;
+    blockquote {
+        display: none;
     }
-
-    footer {
-        display: flex;
+    .carousel-items {
         flex-direction: column;
-        margin: 3px;
     }
-
-    img {
-        width: 100%;
+    .card {
+        margin: 10px;
     }
-    #monog {
-        width: 30%;
-        margin: 0;
+    .plats {
+        width: 70%;
+        margin: auto;
     }
-
+    .column {
+        display: none;
+    }
+    footer {
+        flex-direction: column;
+    }
 }
+
+
+
