@@ -48,6 +48,17 @@
     }
 }
 
+.separator {
+    width: 50%;
+    height: 10px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    background-color: #66a59e;
+    margin: auto;
+    border-end-start-radius: 100px;
+    border-start-end-radius: 100px;
+}
+
 // Mail
 
 a:link {
@@ -66,3 +77,35 @@ img {
          width: 12%;
          margin-left: 50px;
  }
+
+ 
+
+ .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+  width: auto;
+  text-transform: uppercase;
+  letter-spacing: 4.0px;
+  font-weight: 600;
+  font-size: 14px;
+  
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+  color: white!important;
+}
+
+.navbar-light .navbar-brand {
+  color: white!important;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: white!important;
+}
+
+.dropdown-menu {
+  padding: 0.5rem 3rem!important;
+}
+
+.typed-cursor.typed-cursor--blink {
+    animation: typedjsBlink 0.7s infinite;
+    -webkit-animation: typedjsBlink 0.7s infinite;
+    animation: typedjsBlink 0.7s infinite;
+}

@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/d7564008fd.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./public/css/styles.css">
-    <link href="assets/img/favicon.png" rel="icon">
+    <link href="./public/scss/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../assets/img/favicon.png" rel="icon">
     <meta name="google-site-verification" content="9cypLTU_c6UFu3cyY2S8o78dY8bc8iDRq6lFNWy3rac" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-7CBMM02VR9"></script>
@@ -26,36 +28,66 @@
 
 <body>
 
-    <header>
-
-
-        <div class="title">
-            <i class="arrow fas fa-4x fa-arrow-down"></i>
-            <h1>Créations</h1>
-            <i class="arrow fas fa-4x fa-arrow-down"></i>
-        </div>
-
-
-
+    <header class="sticky-top shadow">
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">Gaël-dev</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Portfolio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Services ( Prochainement )
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Intégration web</a></li>
+                                <li><a class="dropdown-item" href="#">UI</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">And More...</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#basdepage">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <section>
 
         <div class="all">
 
-
+            <div class="title">
+                <i class="arrow fas fa-4x fa-arrow-down"></i>
+                <h1>Créations</h1>
+                <i class="arrow fas fa-4x fa-arrow-down"></i>
+            </div>
 
             <figure>
                 <blockquote>
-                    <p>Il y a deux types de personnes dans le monde, ceux qui disent aux ordinateurs ce qu’il faut
-                        faire et ceux à qui les ordinateurs leur disent quoi faire.</p>
-                    <figcaption> - Marc Andreesen</figcaption>
+                    <p>Tourne la page et ce que tu as fait hier fais le mieux aujourd’hui..</p>
+                    <figcaption> - The 100</figcaption>
                 </blockquote>
             </figure>
 
             <div class="corps">
 
-                    <h2>Projets</h2>
+                <h2>Projets Partie 1</h2>
                 <div class="carousel">
                     <ul class="carousel-items">
                         <li class="carousel-item">
@@ -74,6 +106,7 @@
                                         onclick="window.location.href = 'https://gael-dev.github.io/P3/';"
                                         value="Voir le site web" />
                                 </div>
+
                             </div>
                         </li>
                         <li class="carousel-item">
@@ -158,58 +191,90 @@
                             </div>
                         </li>
                     </ul>
+                    <h2>Projets Partie 2</h2>
+                </div>
+
+                <div class="carousel">
+                    <ul class="carousel-items">
+                        <li class="carousel-item">
+                            <div class="card">
+                                <h3 class="card-title"></h3>
+                                <a href="./public/img/studi.png"><img src="./public/img/studi.png"
+                                        alt="école du numérique" title="Cliquez pour agrandir" /></a>
+                                <div class="card-content">
+                                    <p> * Elaboration de projets en cours via la Formation "Bachelor Développeur
+                                        d'application Python"</p>
+                                </div>
+
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
 
     </section>
-
+    <h2>Jeux</h2>
     <section class="Memory">
-        <h2>Jeux</h2>
-        <div class="row">
-            <div class="memo">
-                <a href="./public/img/Memory.png"><img class="imgmemory" src="./public/img/Memory.png"
-                    alt="Memory Vice-versa"
-                    title="Cliquez pour agrandir" /></a>
-            </div>
-            <div class="column1">
+
+
+        <div class="imgrow">
+            <img class="imgmemory" src="./public/img/Memory.png" alt="Memory Vice-versa"
+                title="Cliquez pour agrandir" />
+
+            <div class="column2">
                 <h3> Memory </h3>
-                <p> * Jeu pour enfants sur le thème Vice-versa</p>
-                <a href="https://gael-dev.github.io/Memory/">Cliquez ici</a>
+                <p> * Jeu fait en JavaScript pour enfants sur le thème Vice-versa</p>
+                <a class="btn btn-success" href="https://gael-dev.github.io/Memory/" role="button">Cliquez ici pour
+                    Jouer</a>
             </div>
-       </div>
+        </div>
 
-       <div class="row">
-           <div class="memo">
-            <a href="./public/img/unity3d.jpg"><img class="imgmemory" src="./public/img/unity3d.jpg"
-                alt="unity"
-                title="Cliquez pour agrandir" /></a>
-           </div>
-           <div class="column1">
-            <h3> Labyrinthe </h3>
-                <p> * Jeu 3D sous Unity en cours de réalisation</p>
-           </div>
-       </div>
 
-       <h2>À suivre</h2>
+        <div class="imgrow">
+            <img class="imgmemory" src="./public/img/Labyrinth.png" alt="unity" title="Cliquez pour agrandir" />
+
+            <div class="column2">
+                <h3> Escape Bomb - Labyrinthe </h3>
+                <p>* Jeu 3D sous Unity</p>
+                <p>* Trouver les 4 indices dans le temps imparti afin de désamorcer la bombe.</p>
+                <p>*Mise a jour à suivre via Github</p>
+                <a class="btn btn-success" href="https://github.com/gael-dev/Bomb-Escape/archive/refs/heads/main.zip"
+                    role="button">Télécharger</a>
+            </div>
+        </div>
+
+        <div class="imgrow">
+            <img class="imgmemory" src="./public/img/unity3d.jpg" alt="unity" title="Cliquez pour agrandir" />
+
+            <div class="column2">
+                <h3> Jumpy </h3>
+                <p>* Jeu 2D sous Unity</p>
+                <p>* Fabrication en cours</p>
+                <p>*Mise a jour à suivre via Github prochainement</p>
+                <a class="btn btn-success" href="#" role="button"></a>
+            </div>
+        </div>
+
+
     </section>
-
+    <h2>À suivre</h2>
     <section class="plats">
-        
+
 
         <div class="column">
             <div class="projetpersonnel2">
                 <h3> Projet personnel en cours</h3>
-                <p> * Elaboration d'un site web avec des recettes pour enfants</p>
+                <p> * Elaboration d'un site web avec des recettes familiales</p>
             </div>
         </div>
     </section>
 
-
+    <div class="separator"></div>
 
     <footer>
 
-        <div class="flow">
+        <div id="basdepage" class="flow">
             <div class="trois">
                 <a href="https://github.com/gael-dev">
                     <i class="trois fab fa-2x fa-github"></i>
@@ -228,6 +293,9 @@
         </div>
 
     </footer>
+
+    <script src="./public/scss/vendors/bootstrap/js/bootstrap.js"></script>
+
 </body>
 
 </html>
