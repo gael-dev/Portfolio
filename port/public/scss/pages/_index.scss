@@ -10,7 +10,11 @@
     align-self: center;
 }
 
-.button {   background-color: burlywood;}
+.button {   background-color: burlywood;
+    margin-block-start: auto;
+    width: 50%;
+    align-self: center;
+}
 
 .column {
     text-align-last: center;

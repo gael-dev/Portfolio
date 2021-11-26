@@ -316,6 +316,9 @@ img {
 
 .button {
   background-color: burlywood;
+  margin-block-start: auto;
+  width: 50%;
+  align-self: center;
 }
 
 .column {
@@ -491,6 +494,11 @@ header {
   padding: 1rem;
   text-align: center;
   height: 100% !important;
+}
+.card img {
+  border: solid 1px black;
+  border-radius: 10px;
+  position: inherit !important;
 }
 
 /********************************
