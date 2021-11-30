@@ -27,6 +27,17 @@
     width: 25%;
 }
 
+.column1 {
+    text-align-last: center;
+    padding: 15px;
+    background-color: #50a7c4;
+    opacity: 0.8;
+    border: solid 2px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
 .column2 {
     text-align-last: center;
     margin-top: 15px;
@@ -63,4 +74,9 @@ h2 {
     text-decoration: underline #50a7c4;
     text-align: center;
     margin-bottom: 30px!important;
+}
+
+.scene {
+    display: flex;
+    flex-direction: column;
 }

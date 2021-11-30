@@ -173,9 +173,10 @@ header {
 /********************************
 * Breakpoints
 *********************************/
-@media screen and (min-width: 576px) {
+@media screen and (max-width: 576px) {
     .carousel-item {
         flex-basis: 300px;
+        display: block!important;
     }
 }
 
@@ -221,4 +222,73 @@ header {
     textarea {
         font-size: 1.00rem;
     }
+}
+
+
+/* Carousel 3d  */
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.scene {
+  margin: 40px 0;
+  position: relative;
+  width: 500px;
+  height: 400px;
+  margin: 80px auto;
+  perspective: 1000px;
+}
+
+.carousel3d {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform: translateZ(-288px);
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.carousel__cell {
+  position: absolute;
+  width: 500px;
+  height: 400px;
+  left: 10px;
+  top: 10px;
+  border: 2px solid black;
+  border-radius: 100px;
+  line-height: 116px;
+  font-size: 80px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  transition: transform 1s, opacity 1s;
+}
+
+.carousel__cell:nth-child(9n+1) { background-image: url(../img/bientot.png); }
+.carousel__cell:nth-child(9n+2) { background-image: url(../img/bientot.png); }
+.carousel__cell:nth-child(9n+3) { background-image: url(../img/bientot.png); }
+.carousel__cell:nth-child(9n+4) { background-image: url(../img/bientot.png); }
+.carousel__cell:nth-child(9n+5) { background-image: url(../img/bientot.png); }
+.carousel__cell:nth-child(9n+6) { background-image: url(../img/bientot.png); }
+
+.carousel__cell:nth-child(1) { transform: rotateY(  0deg) translateZ(288px); }
+.carousel__cell:nth-child(2) { transform: rotateY( 40deg) translateZ(288px); }
+.carousel__cell:nth-child(3) { transform: rotateY( 80deg) translateZ(288px); }
+.carousel__cell:nth-child(4) { transform: rotateY(120deg) translateZ(288px); }
+.carousel__cell:nth-child(5) { transform: rotateY(160deg) translateZ(288px); }
+.carousel__cell:nth-child(6) { transform: rotateY(200deg) translateZ(288px); }
+
+
+
+
+.carousel-options {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  display: flex;
+    flex-direction: column;
 }

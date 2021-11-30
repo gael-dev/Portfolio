@@ -1,4 +1,18 @@
-// Mise en page responsive pour tablettes et mobiles
+
+@media screen and (max-width: 1920px) {
+    .column1 {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .lign {
+        flex-direction: column-reverse;
+    }
+
+}
+
+
 
 @media screen and (max-width: 1024px) {
     .trois {
@@ -33,9 +47,13 @@
     .column1 {
         width: 45%;
     }
+    .navbar-brand {
+        margin-right: 1rem!important;
+    }
+
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 768px) {
     .arrow {
         display: none;
     }
@@ -43,9 +61,8 @@
         color: black;
         text-align-last: center;
     }
-    blockquote {
-        display: none;
-    }
+   
+    
     .carousel-items {
         flex-direction: column;
     }
@@ -56,11 +73,17 @@
         width: 70%;
         margin: auto;
     }
-    .column {
-        display: none;
-    }
+    
     footer {
         flex-direction: column;
+    }
+    .center {
+        display: none;
+    }
+
+    .imgmemory {
+        width: 75%;
+        margin: auto;
     }
 }
 

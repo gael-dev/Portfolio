@@ -8,6 +8,7 @@
     <title>Formulaire</title>
 </head>
 <body>
+  <div class="background">
     <h2>Formulaire de prise de contact</h2>
 <form action="#">
   <p><i>Complétez le formulaire. Les champs marqué par </i><em>*</em> sont <em>obligatoires</em></p>
@@ -18,7 +19,7 @@
       <label for="telephone">Portable</label>
       <input id="telephone" type="tel" placeholder="" pattern="06[0-9]{8}"><br>
       <label for="email">Email <em>*</em></label>
-      <input id="email" type="email" placeholder="prenom.nom@gmail.com" required="" pattern="[a-zA-Z]*.[a-zA-Z]*@gmail.com"><br>
+      <input id="emailAddress" type="email" multiple ><br>
   </fieldset>
   <fieldset>
     <legend>Information sur le projet</legend>
@@ -36,5 +37,6 @@
 
     <img src="../img/valide.png">
 
+</div>
 </body>
 </html>
