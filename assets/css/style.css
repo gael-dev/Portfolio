@@ -203,6 +203,17 @@ a:hover {
   bottom: -12px;
 }
 
+.modal-backdrop {
+  z-index: 0!important;
+}
+
+.modal-footer {
+  justify-content: center!important;
+}
+
+.modal-body {
+  align-self: center!important;
+}
 
 .box-pl2 {
   padding-left: 2rem;
