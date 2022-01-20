@@ -268,7 +268,7 @@ body {
   transition: transform 1s, opacity 1s;
 }
 
-.carousel__cell:nth-child(9n+1) { background-image: url(../img/bientot.png); }
+.carousel__cell:nth-child(9n+1) { background-image: url(../img/clipboard.png); background-size: cover; }
 .carousel__cell:nth-child(9n+2) { background-image: url(../img/bientot.png); }
 .carousel__cell:nth-child(9n+3) { background-image: url(../img/bientot.png); }
 .carousel__cell:nth-child(9n+4) { background-image: url(../img/bientot.png); }

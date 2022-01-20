@@ -557,7 +557,6 @@ header {
   position: inherit !important;
 }
 
-
 /********************************
 * Carousel styles
 *********************************/
@@ -682,7 +681,8 @@ body {
 }
 
 .carousel__cell:nth-child(9n+1) {
-  background-image: url(../img/bientot.png);
+  background-image: url(../img/clipboard.png);
+  background-size: cover;
 }
 
 .carousel__cell:nth-child(9n+2) {
